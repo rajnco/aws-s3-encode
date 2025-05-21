@@ -1,0 +1,20 @@
+<html>
+    <head><title>Table of Top {{book_count}} Books - Project Gutenberg </title></head>
+    <body>
+        <h2>Table of Top {{book_count}} from Project Gutenberg</h2>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th>Authors</th>
+                <th>Title</th>
+            </tr>
+            {% for book in books %}
+            <tr>
+                <td>{{book["Text#"]}}</td>
+                <td>{{book.Authors}}</td>
+                <td>{{book.Title}}</td>
+            </tr>
+  {% endfor %}
+        </table>
+    </body>
+</html>

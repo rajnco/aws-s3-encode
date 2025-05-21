@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aws-s3-encode"
+version = "0.1.0"
+description = ""
+authors = ["Rajkumar N <rajkumar.natarajan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+boto3 = "^1.38.19"
+pyyaml = "^6.0.2"
+jinja2 = "^3.1.6"
+playwright = "^1.52.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
